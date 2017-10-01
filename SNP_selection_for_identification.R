@@ -1,8 +1,8 @@
 # argument 1: Input SNP information file
 # argument 2: MAF (Minor Allele frequency; 0-50 [%]) 
-# argument 3: input feature name such as "gene", "protein", "mRNA", "pseudogenic_transcript", "transposable_element_gene"
-# argument 4: Length [bp]
-# argument 5: loop count of extension of 5'end of each gene
+# argument 3: Minimum distance between markers [bp]
+# argument 4: The number of calculation for barcodeing of all samples using random marker sets [times]
+# argument 5: Output folder
 # argument 6: Minimum number of markers used for identification
 # argument 7: Maximum number of markers used for identification
 # 
@@ -35,6 +35,8 @@
 # (3) Markertable_usage_count.csv: Number of marker sets
 # (4) Markertable_usage_markers.csv: Usage count of each marker for the marker sets
 # 
+# Example: Rscript --vanilla --slave Identification-of-varieties-by-SNPs.R $HOME/Input/Input.csv 40 500000 500000 $HOME/Output/ 10 25
+#
 # 
 # 
 
